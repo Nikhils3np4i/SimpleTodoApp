@@ -1,0 +1,77 @@
+body{
+            background: linear-gradient(45deg,rgb(38, 78, 78), rgb(52, 211, 211));
+            z-index: 100;
+            height: 98vh;
+            display: flex;
+        }
+        main{
+            margin: auto auto;
+            background-color: rgb(228, 228, 217);
+            opacity: 25%;
+            height: 50vh;
+            width: 350px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.3);
+            overflow-y: hidden;
+        }
+
+        #inputDiv{
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        #inputDiv > input{
+            width: 400px;
+            margin-left: 4px;
+            outline: none;
+            padding: 4px;
+            font-weight: 600;
+        }
+
+        #addBtn{
+           cursor: pointer;
+           outline: none;
+           margin-right: 4px;
+           width: 50px;
+        }
+
+        .addedTask{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 4px;
+            margin-right: 4px;
+            gap: 30px;
+            border: 1px solid black;
+            padding: 12px;
+            border-radius: 20px;
+        }
+
+
+        @media(max-width: 500px){
+            main{
+                height: 50vh;
+                width: 300px;
+            }
+        }
+
+         @media(max-width: 358px){
+            main{
+                height: 50vh;
+                width: 250px;
+            }
+
+            #inputDiv{
+                gap: 10px;
+            }
+
+            #inputDiv > input{
+                width: 200px;
+                margin-left: 6px;
+            }
+        }
